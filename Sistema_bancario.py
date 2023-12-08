@@ -7,3 +7,8 @@ Menu = input('''Selecione a opção desejada:
 
 => ''')
 
+Saldo = 0
+Limite = 500
+Extrato = ""
+numero_de_saques = 0
+LIMITE_DE_SAQUE = 3
