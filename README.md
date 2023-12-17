@@ -40,4 +40,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas ou env
 
 ## Licença
 
-Este projeto é licenciado sob a DIO.me.
+Este projeto é licenciado sob a MIT.
