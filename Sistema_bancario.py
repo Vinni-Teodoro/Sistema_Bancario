@@ -29,7 +29,31 @@ while True:
                 
 
     elif opcao == "2":
-        print("Saque")
+        valor = float(input("Digite o valor de Saque"))
+
+        saque_maior = valor > Saldo
+
+        saque_maior_limite = valor > Limite
+
+        excedeu_saque = numero_de_saques > LIMITE_DE_SAQUE
+
+        if saque_maior:
+            print("Valor digitado, maior que seu saldo!")
+
+        elif saque_maior_limite:
+            print("Valor digitado, maior que o limite diário!")
+
+        elif excedeu_saque:
+            print("Limite de saque diário atingido, operação cancelada!")  
+
+        elif valor > 0:
+            Saldo += valor
+            Extrato += f'Saque: R$ {valor: .2f}\n'
+            numero_de_saques += 1
+
+        else:
+            print("Operação cancelada! Valor digitado incorreto.")          
+
 
     elif opcao == "3":
         print("Extrato")
