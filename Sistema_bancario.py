@@ -29,7 +29,7 @@ while True:
                 
 
     elif opcao == "2":
-        valor = float(input("Digite o valor de Saque"))
+        valor = float(input("Digite o valor de Saque: "))
 
         saque_maior = valor > Saldo
 
