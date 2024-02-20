@@ -18,7 +18,15 @@ while True:
     opcao = input(f"Seleione a opção desejada:{Menu}" )
 
     if opcao == "1":
-        print("Depositar")
+        valor = float(input("Digite o valor do deposito:"))
+
+        if valor > 0:
+            Saldo += valor
+            Extrato += f'Deposito: R$ {valor: .2f}\n'
+
+        else:
+            print("Operação cancelada! Valor digitado incorreto.")
+                
 
     elif opcao == "2":
         print("Saque")
