@@ -56,7 +56,10 @@ while True:
 
 
     elif opcao == "3":
-        print("Extrato")
+        print("------------------EXTRATO--------------")
+        print("Não foram realizadas transações." if not Extrato else Extrato)
+        print(f"\nSaldo: R$ {Saldo: .2f}")
+        print("---------------------------------------")
 
     elif opcao == "0":
         print("Saindo...")
